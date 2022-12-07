@@ -9,19 +9,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script>
-        function {
-            onclick="document.getElementById('screen')";
+        function clr() {
+            onclick=document.getElementById('screen');
         }
+
         function solve() {
-            let y = eval document.getElementById('screen'),value=y
-            document.getElementById('screen'),value=y;
+            let y = eval(document.getElementById('screen').value);
+            document.getElementById('screen').value=y;
+            
         }
     </script>
 </head>
 
-<body class="grid grid-cols-4 gap-4 bg-pink-500">
+<body class="grid grid-cols-4 gap-4 w-5/6 auto bg-pink-500">
 
-    <input id="screen cols-span-2">
+    <input id="screen">
         <button onclick="document.getElementById('screen').value=''">AC</button>
         <button onclick="document.getElementById('screen').value+='1'">1</button>
         <button onclick="document.getElementById('screen').value+='2'">2</button>
@@ -37,7 +39,8 @@
         <button onclick="document.getElementById('screen').value+='-'">-</button>
         <button onclick="document.getElementById('screen').value+='.'">.</button>
         <button onclick="document.getElementById('screen').value+='0'">0</button>
-        <button onclick="document.getElementById('screen').equal+='='">=</button>
+        <button onclick="solve()">=</button>
 
 
 </body>
+</html>
