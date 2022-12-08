@@ -8,41 +8,27 @@
     <title>calculator</title>
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <script>
-        function clr() {
-            document.getElementById('screen').value='';
-        }
-
-        function solve() {
-            let y = eval(document.getElementById('screen').value);
-            document.getElementById('screen').value=y;
-        }
-
-        function number(n) {
-            document.getElementById('screen').value+=n;
-        }
-
-    </script>
+    
 </head>
 
 <body class="grid grid-cols-4 gap-4 h-48 w-2/3 mx-auto bg-pink-800">
 
     <input id="screen">
         <button class="bg-sky-500 hover:bg-sky-700" onclick="clr()">AC</button>
-        <button class="bg-sky-500 hover:bg-sky-700"onclick="number('3')">3</button>
+        <button class="bg-sky-500 hover:bg-sky-700" onclick="number('1')">1</button>
         <button class="bg-sky-500 hover:bg-sky-700"onclick="number('2')">2</button>
+        <button class="bg-sky-500 hover:bg-sky-700"onclick="number('3')">3</button>
         <button class="bg-sky-500 hover:bg-sky-700"onclick="document.getElementById('screen').value+='/'">/</button>
-        <button class="bg-sky-500 hover:bg-sky-700"onclick="document.getElementById('screen').value+='4'">4</button>
-        <button class="bg-sky-500 hover:bg-sky-700" onclick="document.getElementById('screen').value+='1'">1</button>
-        <button class="bg-sky-500 hover:bg-sky-700"onclick="document.getElementById('screen').value+='5'">5</button>
-        <button class="bg-sky-500 hover:bg-sky-700"onclick="document.getElementById('screen').value+='6'">6</button>
+        <button class="bg-sky-500 hover:bg-sky-700"onclick="number('4')">4</button>
+        <button class="bg-sky-500 hover:bg-sky-700"onclick="number('5')">5</button>
+        <button class="bg-sky-500 hover:bg-sky-700"onclick="number('6')">6</button>
         <button class="bg-sky-500 hover:bg-sky-700"onclick="document.getElementById('screen').value+='+'">+</button>
-        <button class="bg-sky-500 hover:bg-sky-700"onclick="document.getElementById('screen').value+='7'">7</button>
-        <button class="bg-sky-500 hover:bg-sky-700"onclick="document.getElementById('screen').value+='8'">8</button>
-        <button class="bg-sky-500 hover:bg-sky-700"onclick="document.getElementById('screen').value+='9'">9</button>
+        <button class="bg-sky-500 hover:bg-sky-700"onclick="number('7')">7</button>
+        <button class="bg-sky-500 hover:bg-sky-700"onclick="number('8')">8</button>
+        <button class="bg-sky-500 hover:bg-sky-700"onclick="number('9')">9</button>
         <button class="bg-sky-500 hover:bg-sky-700"onclick="document.getElementById('screen').value+='-'">-</button>
         <button class="bg-sky-500 hover:bg-sky-700"onclick="document.getElementById('screen').value+='.'">.</button>
-        <button class="bg-sky-500 hover:bg-sky-700"onclick="document.getElementById('screen').value+='0'">0</button>
+        <button class="bg-sky-500 hover:bg-sky-700"onclick="number('0')">0</button>
         <button class="bg-sky-500 hover:bg-sky-700"onclick="solve()">=</button>
 
 
